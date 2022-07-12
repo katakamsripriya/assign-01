@@ -45,8 +45,28 @@ Make sure you fill in the right details.
 '''
 
 def my_details():
-  """Return a dictionary with your details in the format as specified in the above instructions"""
-  pass
+  x=input('Enter the name of the dict: ')
+d={}
+n=int(input("Enter the number of inputs in the dict: "))
+for j in range(n):
+  d[x]={}
+  for i in range(0,2):
+    key=input("Enter the key name: ")
+    value=input("Enter the value: ")
+  d[x].update({key:value})
+  d.update({'Roll num':'0990'})
+  d.update({'Branch':'CSE'})
+  d.update({'Specialization':'CORE'})
+  d.update({'Email-Id':'skatakam@gitam.in'})
+  d.update({'Replit-Id':'KATAKAM-SRIPRIY'})
+  d.update({'GitHub-Id':'katakamsripriya'})
+  d.update({'Moodle-Id':'VU21CSENO100990'})
+  d.update({'Semester':'2'})
+  d.update({'Year':'1'})
+  return d
+
+
+
 
 
 # now call your function
